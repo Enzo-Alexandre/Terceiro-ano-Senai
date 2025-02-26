@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Cadastro de Usuário</title>
+    <script>
+        function validarFormulario(event) {
+            event.preventDefault();
+            
+            const phone = document.getElementById("phone").value;
+            const cpf = document.getElementById("cpf").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
+            
+            const phoneRegex = /^\(\d{2}\) \d{4,5}-\d{4}$/;
+            const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+            
+            if (!phoneRegex.test(phone)) {
+                alert("Telefone inválido! Formato esperado: (XX) XXXXX-XXXX");
+                return;
+            }
+            
+            if (!cpfRegex.test(cpf)) {
+                alert("CPF inválido! Formato esperado: XXX.XXX.XXX-XX");
+                return;
+            }
+            
+            if (!passwordRegex.test(password)) {
+                alert("A senha deve ter pelo menos 6 caracteres, incluindo letras e números.");
+                return;
+            }
+            
+            if (password !== confirmPassword) {
+                alert("As senhas não coincidem!");
+                return;
+            }
+            
+            alert("Cadastro realizado com sucesso!");
+            event.target.submit();
+        }
+    </script>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <form action="#" method="POST" onsubmit="validarFormulario(event)">
+        <label for="username">Nome de usuário:</label>
+        <input type="text" id="username" name="username" required><br>
+        
+        <label for="fullname">Nome completo:</label>
+        <input type="text" id="fullname" name="fullname" required><br>
+        
+        <label for="phone">Telefone:</label>
+        <input type="text" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required><br>
+        
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" required><br>
+        
+        <label for="gender">Gênero:</label>
+        <select id="gender" name="gender" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br>
+        
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <label for="confirm-password">Confirme a Senha:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required><br>
+        
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
