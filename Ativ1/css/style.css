@@ -48,7 +48,16 @@ body {
     border-color: #5a9e3c;
 }
 
-
+#icon-update{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
+#icon-support{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
 
   
 footer {
