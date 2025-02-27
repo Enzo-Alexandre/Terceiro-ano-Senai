@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -34,21 +35,21 @@
       </nav>
 <section>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/shield-lock-fill.svg" alt="Card image cap">
+        <i class="bi bi-shield-lock" id="icon-shield-lock"></i>
         <div class="card-body">
           <h5 class="card-title">O que é segurança digital?</h5>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#segurancaModal">
             Segurança Digital
           </button>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="segurancaModal" tabindex="-1" role="dialog" aria-labelledby="segurancaModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Segurança Digital</h5>
+                  <h5 class="modal-title" id="segurancaModalLabe">Segurança Digital</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -68,21 +69,21 @@
       </div>
     </div>
     <!---->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/file-lock.svg" alt="Card image cap">
+        <i class="bi bi-file-lock" id="icon-file-lock"></i>
         <div class="card-body">
           <h5 class="card-title">Senhas seguras e como criá-las</h5>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#senhaModal">
             Senhas seguras
           </button>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="senhaModal" tabindex="-1" role="dialog" aria-labelledby="senhaModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Senhas seguras</h5>
+                  <h5 class="modal-title" id="senhaModalLabel">Senhas seguras</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -102,21 +103,21 @@
       </div>
     </div>
     <!---->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/incognito.svg" alt="Card image cap">
+        <i class="bi bi-incognito" id="icon-incognito"></i>
         <div class="card-body">
           <h5 class="card-title">Golpes mais comuns na internet</h5>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#golpeModal">
             Golpes
           </button>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="golpe" tabindex="-1" role="dialog" aria-labelledby="golpeModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Golpes</h5>
+                  <h5 class="modal-title" id="golpeModalLabel">Golpes</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -139,21 +140,21 @@
       </div>
     </div>
     <!---->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/globe2.svg" alt="Card image cap">
+        <i class="bi bi-globe2" id="icon-globe"></i>
         <div class="card-body">
           <h5 class="card-title">Uso seguro do WhatsApp e redes sociais</h5>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#redesModal">
             Segurança WhatsApp
           </button>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="redesModal" tabindex="-1" role="dialog" aria-labelledby="redesModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Segurança WhatsApp</h5>
+                  <h5 class="modal-title" id="redesModalLabel">Segurança WhatsApp</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -173,21 +174,21 @@
       </div>
     </div>
     <!---->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/envelope.svg" alt="Card image cap">
+        <i class="bi bi-envelope" id="icon-envelope"></i>
         <div class="card-body">
           <h5 class="card-title">Reconhecendo e-mails e mensagens falsas</h5>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#recModal">
               e-mails/mensagens
           </button>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="recModal" tabindex="-1" role="dialog" aria-labelledby="recModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Reconhecimento e-mails/mensagens</h5>
+                  <h5 class="modal-title" id="recModalLabel">Reconhecimento e-mails/mensagens</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -207,21 +208,21 @@
       </div>
     </div>
     <!---->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/bag.svg" alt="Card image cap">
+        <i class="bi bi-bag" id="icon-bag"></i>
         <div class="card-body">
           <h5 class="card-title">Compras onlines e seguras</h5>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compModal">
             Compras seguras
           </button>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="compModal" tabindex="-1" role="dialog" aria-labelledby="compModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Compras seguras</h5>
+                  <h5 class="modal-title" id="compModalLabel">Compras seguras</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -244,21 +245,21 @@
       </div>
     </div>
     <!---->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/person-lock.svg" alt="Card image cap">
+        <i class="bi bi-person-lock" id="icon-person-lock"></i>
         <div class="card-body">
           <h5 class="card-title">Privacidades de dados pessoais</h5>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#privModal">
             Privacidade dados 
           </button>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="privModal" tabindex="-1" role="dialog" aria-labelledby="privModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Privacidade dados</h5>
+                  <h5 class="modal-title" id="privModalLabel">Privacidade dados</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -278,21 +279,21 @@
       </div>
     </div>
     <!---->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/virus.svg" alt="Card image cap">
+        <i class="bi bi-virus" id="icon-virus"></i>
         <div class="card-body">
           <h5 class="card-title">Como evitar vírus e malwares</h5>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#virusModal">
             Vírus e Malwares 
           </button>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="virusModal" tabindex="-1" role="dialog" aria-labelledby="virusModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Vírus e Malwares</h5>
+                  <h5 class="modal-title" id="virusModalLabel">Vírus e Malwares</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -314,21 +315,21 @@
       </div>
     </div>
     <!---->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
         <i  class="fa fa-refresh" aria-hidden="true" id="icon-update"></i>
         <div class="card-body">
           <h5 class="card-title">importacia das atualizações</h5>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateModal">
             importacia atualizações 
           </button>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">importacia atualizações</h5>
+                  <h5 class="modal-title" id="updateModalLabel">importacia atualizações</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -347,23 +348,23 @@
       </div>
     </div>
     <!---->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="card" style="width: 18rem;">
         <i class="fa fa-question-circle" aria-hidden="true" id="icon-support"></i>
         <div class="card-body">
           <h5 class="card-title">Suporte e ajuda</h5>
           <!-- Button trigger modal -->
           <div class="container"></div>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#supModal">
               Suporte e ajuda 
             </button>
           </div>
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="supModal" tabindex="-1" role="dialog" aria-labelledby="supModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Suporte e ajuda</h5>
+                  <h5 class="modal-title" id="supModalLabel">Suporte e ajuda</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>

@@ -59,6 +59,53 @@ body {
     text-align: center;
 }
 
+#icon-shield-lock{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
+
+#icon-file-lock{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
+
+#icon-incognito{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
+
+#icon-globe{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
+
+#icon-envelope{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
+
+#icon-bag{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
+
+#icon-person-lock{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
+
+#icon-virus{
+    color: #000000;
+    font-size: 12.2rem;
+    text-align: center;
+}
   
 footer {
     background-color: #0073e6;
