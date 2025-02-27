@@ -4,13 +4,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #c4c4c4;
+    background-color: #c4c4c4 !important;
     margin: 0;
     padding: 0;
 }
 
 .navbar {
-    background-color: #0073e6 !important;
+    background-color: #8ecae6 !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -38,14 +38,9 @@ body {
     color: #333333;
 }
 
-.btn-primary {
-    background-color: #78c850;
-    border-color: #78c850;
-}
-
-.btn-primary:hover {
-    background-color: #5a9e3c;
-    border-color: #5a9e3c;
+#cards{
+    text-align: center;
+    width: auto;
 }
 
 #icon-update{
@@ -63,6 +58,7 @@ body {
     color: #000000;
     font-size: 12.2rem;
     text-align: center;
+    
 }
 
 #icon-file-lock{
