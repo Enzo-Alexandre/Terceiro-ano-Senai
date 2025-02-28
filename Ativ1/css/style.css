@@ -4,13 +4,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #c4c4c4 !important;
+    background-color: #cfcfcf !important;
     margin: 0;
     padding: 0;
 }
 
 .navbar {
-    background-color: #8ecae6 !important;
+    background-color: #add1e2 !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -38,69 +38,19 @@ body {
     color: #333333;
 }
 
+#navbarNavDropdown{
+    text-align: center !important;
+}
+
 #cards{
     text-align: center;
     width: auto;
 }
 
-#icon-update{
+#icon{
     color: #000000;
     font-size: 12.2rem;
-    text-align: center;
-}
-#icon-support{
-    color: #000000;
-    font-size: 12.2rem;
-    text-align: center;
-}
-
-#icon-shield-lock{
-    color: #000000;
-    font-size: 12.2rem;
-    text-align: center;
-    
-}
-
-#icon-file-lock{
-    color: #000000;
-    font-size: 12.2rem;
-    text-align: center;
-}
-
-#icon-incognito{
-    color: #000000;
-    font-size: 12.2rem;
-    text-align: center;
-}
-
-#icon-globe{
-    color: #000000;
-    font-size: 12.2rem;
-    text-align: center;
-}
-
-#icon-envelope{
-    color: #000000;
-    font-size: 12.2rem;
-    text-align: center;
-}
-
-#icon-bag{
-    color: #000000;
-    font-size: 12.2rem;
-    text-align: center;
-}
-
-#icon-person-lock{
-    color: #000000;
-    font-size: 12.2rem;
-    text-align: center;
-}
-
-#icon-virus{
-    color: #000000;
-    font-size: 12.2rem;
-    text-align: center;
+    text-align: center;   
 }
   
 footer {
